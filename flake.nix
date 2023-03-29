@@ -15,6 +15,10 @@
       full = pkgs.stdenvNoCC.mkDerivation {
         pname = pkg_prefix;
         version = "v${pkg_version}";
+
+        meta = {
+          description = "A test flake.  tag:foo,bar";
+        };
       };
 
       default = self.packages.${system}.full;
