@@ -16,6 +16,8 @@
         pname = pkg_prefix;
         version = "v${pkg_version}";
       };
+
+      default = self.packages.${system}.full;
     };
   };
 }
