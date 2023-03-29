@@ -18,6 +18,12 @@
 
         meta = {
           description = "A test flake.  tag:foo,bar";
+          maintainters = [{
+            name="Bhavesh Pandey";
+            email="bxpandey@pm.me";
+          }];
+          license = pkgs.lib.licenses.mit;
+          homepage = "git.thegridstudio.io";
         };
       };
 
@@ -29,6 +35,10 @@
       shellHook = ''
         echo Welcome to the '${pkg_prefix}-shell'
       '';
+
+      meta = {
+        description = "A devshell with required environment initialized.";
+      };
     };
   };
 }
