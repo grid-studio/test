@@ -7,7 +7,7 @@
   let
     system = "x86_64-linux";
     pkg_prefix = "workflows";
-    pkg_version = "0.1.0";
+    pkg_version = "0.3.0";
     pkgs = nixpkgs.legacyPackages.${system};
   in
   {
