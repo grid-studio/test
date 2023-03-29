@@ -19,5 +19,12 @@
 
       default = self.packages.${system}.full;
     };
+
+    devShells.${system}.default = pkgs.mkShell {
+      package = [];
+      shellHook = ''
+        echo Welcome to the '${pkg_prefix}-shell'
+      '';
+    };
   };
 }
